@@ -422,6 +422,10 @@ display: none;
 /* <---------------------- desktop home ----------------------> */
 
 @media screen and (min-width: 780px) {
+
+    html {
+        scroll-behavior: smooth;
+      }
     
     body {
         margin: 0;
