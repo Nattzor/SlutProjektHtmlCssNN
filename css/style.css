@@ -249,20 +249,15 @@ a {
 
  /* < ------------------ contact mobil ------------------------- > */
 
- .contactHeaderContainer {
+ .contactHeader {
     background-image: url(../img/man-baby.png);
     background-size: 15rem;
     background-position: right;
     background-repeat: no-repeat;
     background-color: #c7ddea;
     height: 22rem;
-    
 }
 
-.contactHeaderImg{
-    margin-right: 20px;
-}
- 
 .contactNav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -271,13 +266,7 @@ a {
     text-align: center;
     padding-right: 4rem;
     grid-gap: 1rem;
-    height: 200px;
     width: auto;
-}
-
-.contactNav:hover {
-    background-color:  white;
-    color: black;
 }
 
 .home {
@@ -336,7 +325,7 @@ a {
     color: black;
 }
 
-.giveInfo {
+.whatsOnYourMind {
     background-color: #a9a19e;
     color: white;    
 }
@@ -352,18 +341,9 @@ form {
     flex-direction: column;
 }
    
-.emailBox{
-    width: 80%;
+.textArea {
     height: 30px;
     background-color: white;
-    align-self: center; 
-}
-
-.textArea{
-    width: 80%;
-    height: 30px;
-    background-color: white;
-    align-self: center;
 }
 
 .comeVisitUs {
@@ -407,7 +387,7 @@ display: none;
     width: 100%;
 }
 
-.sendMessageButton{
+.messageButton{
     display: none;
 }
 
@@ -471,9 +451,9 @@ display: none;
         padding: 1rem;
     } 
     
-    p {
+     p {
         font-size: 1rem;
-    }
+    } 
 
     main {
         display: grid;
@@ -499,8 +479,7 @@ display: none;
    }
 
     .contectFlex1 p {
-        font-size: 2rem;
-        align-self: center;
+        font-size: 1.25rem;
         padding: 2rem;
     }
 
@@ -559,6 +538,7 @@ display: none;
         background-color: #a9a19e;
         font-size: 1rem;
         text-align: center;
+        padding: 2rem;
     }
     .contectFlex1 .joinNowButton {
         display: block;
@@ -579,10 +559,8 @@ body {
     width: 100%;
  }
  
-
- .contactHeaderContainer{
+ .contactHeader{
      display: flex;
-     flex-direction: column;
      justify-content: center; 
      align-items: center;
  }
@@ -600,28 +578,30 @@ body {
      color: black;
  }
 
- .giveInfo{
+ .whatsOnYourMind{
      width: 100%;
      display: grid;
      height: 550px;
      grid-template-columns: repeat(2, 1fr);
      grid-template-rows: 1fr;
+     
 
  }
 
- .giveInfo h1{
+ .whatsOnYourMind h1{
      grid-column: 1;
      grid-row: 2 / -1;
      text-align: center;
  }
 
- .giveInfo > form{
+ .whatsOnYourMind > form{
      grid-column: 2;
      grid-row: 2 / -1;
      width: 74%;
+     text-align: left;
  }
 
- .giveInfo > form > button{
+ .whatsOnYourMind > form > button{
      display: block;
      border-radius: 50%;
      background-color: white;
@@ -634,6 +614,10 @@ body {
      margin-top: 15px;  
  }
 
+ .whatsOnYourMind > form > label{
+     margin: 0;
+ }
+
  .visitUs{
      width: 300px;
      height: 200px;
@@ -643,7 +627,6 @@ body {
 
  .textArea{
      height: 200px;
-     
  }
 
  .footerContact {
